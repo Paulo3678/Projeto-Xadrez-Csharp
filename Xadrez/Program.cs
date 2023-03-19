@@ -10,13 +10,13 @@ namespace Xadrez
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
-                while (!partida.terminda)
+                while (!partida.terminada)
                 {
                     try
                     {
                         Console.Clear();
                         Tela.imprimirPartida(partida);
-                        
+
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
@@ -48,6 +48,7 @@ namespace Xadrez
             {
                 Console.WriteLine(e.Message);
             }
+
         }
     }
 }
